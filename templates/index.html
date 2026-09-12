@@ -1,0 +1,217 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+<section id="hero" class="section hero-container">
+    <div class="hero-left">
+        <pre class="ascii-name">
+â–ˆâ–ˆâ•—  â–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ•—   â–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•—â–ˆâ–ˆâ•—â–ˆâ•—
+â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ•‘
+â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ•‘
+â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘â•šâ•â•â•â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â•šâ•
+â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘ â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•—
+â•šâ•â•  â•šâ•â•â•šâ•â•  â•šâ•â•â•šâ•â•â•â•â•â•â•â•šâ•â•  â•šâ•â•â•â•â•šâ•â•  â•šâ•â•â•šâ•â•â•šâ•â•â•šâ•â•
+        </pre>
+        
+        <h1 class="hero-headline">
+            I build autonomous AI agents that <span class="amber-txt">actually</span> ship.<span class="cursor">â–ˆ</span>
+        </h1>
+
+        <div class="code-comments">
+            <p># Hafiz Muhammad Hasnain Tariq â€” Aspiring AI Engineer & Python Developer</p>
+            <p># The Islamia University of Bahawalpur, Punjab, Pakistan</p>
+            <p># AI/ML Â· Generative AI Â· AI Agents Â· building tools that don't break.</p>
+        </div>
+
+        <div class="hero-cta-group">
+            <a href="#projects" class="cmd-btn">[ $ view_projects ]</a>
+            <a href="static/resume.pdf" download="Hafiz_Muhammad_Hasnain_Tariq_Resume.pdf" class="cmd-btn">[ $ download_resume ]</a>
+            <a href="#contact" class="cmd-btn">[ $ contact_me ]</a>
+        </div>
+    </div>
+
+    <div class="hero-right mascot-hud-container" id="mascot-parallax">
+        <div class="light-bar-pulse"></div>
+        <div class="hud-label">$ agentic_ai_layer</div>
+        
+        <img src="static/svg/mascot.svg" class="mascot-svg" alt="Holographic AI Mascot Engine">
+        
+        <div class="hud-panel panel-code">
+            <code>agent.run(step="execute")</code>
+        </div>
+        <div class="hud-panel panel-graph">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section terminal-widget-section">
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">bash - agent_interactive_shell.py</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <p class="sys-msg">Agent active. Type a command or ask a question (e.g. <code>what does Hasnain do?</code>, <code>list stack</code>, <code>contact</code>)</p>
+            <div id="terminal-output"></div>
+            <div class="terminal-input-row">
+                <span class="prompt">$ ask_agent</span>
+                <input type="text" id="terminal-input" placeholder="'what does Hasnain do?'" autocomplete="off">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2 class="section-title">## projects â€” small, sharp, deployed.</h2>
+    <div class="projects-grid">
+        {% for project in projects %}
+        <div class="project-card">
+            <div class="card-header">
+                <span class="comment">// {{ project.index }} â€” {{ project.status }}</span>
+                <h3 class="project-name">$ {{ project.name }}</h3>
+            </div>
+            <div class="card-body">
+                <p><strong>Problem:</strong> {{ project.problem }}</p>
+                <p><strong>Approach:</strong> {{ project.approach }}</p>
+                <p><strong>Result:</strong> {{ project.result }}</p>
+            </div>
+            <div class="tag-list">
+                {% for tag in project.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            <div class="card-footer">
+                <a href="{{ project.github }}" target="_blank" class="link-btn">GitHub â†’</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <h2 class="section-title">## skills â€” runtime dependencies</h2>
+    <div class="code-block-wrapper">
+        <pre class="python-code">
+<span class="keyword">from</span> skillset <span class="keyword">import</span> (
+    python,
+    pytorch,
+    langchain,
+    generative_ai,
+    ai_agents,
+    rag_pipelines,
+    sql,
+    javascript,
+    html,
+    css,
+    fastapi
+)
+
+<span class="comment"># Runtime Verification & Status</span>
+<span class="keyword">def</span> <span class="func">get_proficiency_matrix</span>():
+    <span class="keyword">return</span> {
+        <span class="string">"primary_core"</span>: [python, ai_agents, fastapi],
+        <span class="string">"ai_ml_stack"</span>: [pytorch, langchain, generative_ai, rag_pipelines],
+        <span class="string">"web_data"</span>: [sql, javascript, html, css]
+    }
+        </pre>
+    </div>
+</section>
+
+<section id="architecture" class="section">
+    <h2 class="section-title">## system_architecture â€” Alpha Code Security Analyzer</h2>
+    <div class="arch-flow-container">
+        <div class="arch-box">C++ Source Code</div>
+        <div class="arch-arrow">â†’</div>
+        <div class="arch-box highlight-box">Python FastAPI Orchestrator</div>
+        <div class="arch-arrow">â†’</div>
+        <div class="arch-box">C++ Static Engine</div>
+        <div class="arch-arrow">â†’</div>
+        <div class="arch-box highlight-box">Groq AI LLM (&lt;500ms)</div>
+        <div class="arch-arrow">â†’</div>
+        <div class="arch-box">Patch Synthesized & Applied</div>
+    </div>
+</section>
+
+<section id="log" class="section">
+    <h2 class="section-title">## training_log.md â€” what I shipped or broke</h2>
+    <div class="log-container">
+        <div class="log-entries">
+            {% for log in training_log %}
+            <div class="log-item">
+                <span class="log-ver">{{ log.version }}</span>
+                <span class="log-date">[{{ log.date }}]</span>
+                <span class="log-proj">${{ log.project }}:</span>
+                <span class="log-msg">{{ log.message }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="log-sidebar">
+            <div class="stat-card">
+                <span class="stat-num">142</span>
+                <span class="stat-lbl">commits this month</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num">28d</span>
+                <span class="stat-lbl">active streak</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">## github_telemetry â€” @artificialai26-hash</h2>
+    <div class="telemetry-grid">
+        <div class="telemetry-card">
+            <p>Languages breakdown (Bytes written):</p>
+            <div class="ascii-bar-row">
+                <span>Python    </span>
+                <div class="ascii-bar"><div class="fill" style="width: 78%;"></div></div>
+                <span>78%</span>
+            </div>
+            <div class="ascii-bar-row">
+                <span>C++       </span>
+                <div class="ascii-bar"><div class="fill" style="width: 14%;"></div></div>
+                <span>14%</span>
+            </div>
+            <div class="ascii-bar-row">
+                <span>JavaScript</span>
+                <div class="ascii-bar"><div class="fill" style="width: 8%;"></div></div>
+                <span>8%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">## execute_contact</h2>
+    <div class="contact-box">
+        <p><span class="prompt">$</span> ./contact \</p>
+        <p class="indent">--name <span class="string">"Hafiz Muhammad Hasnain Tariq"</span> \</p>
+        <p class="indent">--email <a href="mailto:hafizhasnaintariq@gmail.com" class="string">"hafizhasnaintariq@gmail.com"</a> \</p>
+        <p class="indent">--github <a href="https://github.com/artificialai26-hash" target="_blank" class="string">"github.com/artificialai26-hash"</a> \</p>
+        <p class="indent">--linkedin <a href="https://linkedin.com" target="_blank" class="string">"linkedin.com"</a></p>
+        <br>
+        <p><span class="prompt">$</span> <a href="static/resume.pdf" download="Hafiz_Muhammad_Hasnain_Tariq_Resume.pdf" class="cyan-txt">curl hasnaintariq.dev/resume.pdf -o resume.pdf</a></p>
+    </div>
+</section>
+
+<section class="section final-cta-section">
+    <div class="cta-card">
+        <div class="cta-cmd">$ ./hire_me --status "open to work" --role "AI/ML Agentic Engineer, Python Developer"</div>
+        <h2 class="cta-headline">Have a project? Let's ship it.</h2>
+        <p class="code-comment"># replies within 24-48h Â· open to freelance, contract, and full-time roles</p>
+        
+        <a href="mailto:hafizhasnaintariq@gmail.com?subject=Project%20Inquiry%20-%20Hafiz%20Hasnain%20Tariq" class="hire-btn">
+            $ send_mail â†’
+        </a>
+        
+        <p class="muted-subtext">
+            also reachable via ./contact above, or github.com/artificialai26-hash, or LinkedIn
+        </p>
+    </div>
+</section>
+{% endblock %}

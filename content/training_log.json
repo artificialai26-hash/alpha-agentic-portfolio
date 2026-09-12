@@ -1,0 +1,20 @@
+[
+  {
+    "version": "v0.9",
+    "project": "alpha-code-security-analyzer",
+    "message": "added AST-based buffer-overflow detection for strcpy/gets",
+    "date": "2026-08-28"
+  },
+  {
+    "version": "v0.8",
+    "project": "alpha-ai-engine",
+    "message": "added low-RAM deterministic memory guard and AST syntax check",
+    "date": "2026-08-15"
+  },
+  {
+    "version": "v0.7",
+    "project": "alpha-ai-assistant",
+    "message": "integrated voice-driven system process monitoring and offline fallbacks",
+    "date": "2026-07-20"
+  }
+]
