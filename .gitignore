@@ -1,17 +1,5 @@
-﻿# Python & Virtual Environments
 __pycache__/
-*.py[cod]
-*$py.class
-.venv/
-env/
-venv/
-ENV/
-
-# OS & Editor Files
+*.pyc
+.env
+node_modules/
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Temp Files & Logs
-*.log

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Model AI Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
+    <header class="p-4 border-b border-gray-800 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-blue-400"><i class="fa-solid fa-brain mr-2"></i>AI Dashboard</h1>
+        <select id="modelSelect" class="bg-gray-800 text-sm border border-gray-700 rounded px-3 py-1">
+            <option value="deepseek/deepseek-r1:free">DeepSeek-R1 (Free)</option>
+            <option value="meta-llama/llama-3.3-70b-instruct:free">Meta Llama 3.3 70B (Free)</option>
+            <option value="google/gemini-2.0-flash-exp:free">Google Gemini 2.0 Flash (Free)</option>
+        </select>
+    </header>
+    <main id="chatBox" class="flex-1 p-4 overflow-y-auto space-y-4">
+        <div class="bg-gray-800 p-3 rounded-lg max-w-xl">System ready. Select a model and start chatting!</div>
+    </main>
+    <footer class="p-4 border-t border-gray-800 flex gap-2">
+        <input type="text" id="userInput" placeholder="Type your prompt..." class="flex-1 bg-gray-800 border border-gray-700 rounded px-4 py-2 focus:outline-none focus:border-blue-500">
+        <button id="sendBtn" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-medium">Send</button>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
